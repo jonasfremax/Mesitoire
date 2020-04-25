@@ -1,0 +1,332 @@
+#bodytheme{
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-image: url("images/background.jpg");
+}
+h1 a{
+	text-decoration: none;
+	color: white;
+	font-stretch: ultra-expanded;
+}
+#titre{
+	font-family: 'Lexend Giga', sans-serif;
+	text-align: center;
+	font-size: 40px;
+	text-decoration: none;
+	font-stretch: ultra-expanded;
+	border-bottom: 5px solid white;
+}
+box{
+	position: absolute;
+	top: 150px; left: 20px;
+	background-color: maroon;
+	border-radius: 10px;
+	border-radius: 0px 20px;
+	border: 2px solid gray;
+	width: 200px; height: 300px;
+}
+#centralwindow{
+	z-index: 1;
+	background-color: maroon;
+	float: center;
+	margin: 50px 240px;
+	width: 800px; height: 450px;
+	animation-name: centralwindow;
+	animation-duration: 2s;
+	box-shadow: 10px 15px black;
+}
+#titrewindow{
+	padding: 15px;
+	font-family: 'Lexend Giga', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	color: maroon;
+	background: white;
+	box-shadow: 5px black;
+}
+@keyframes centralwindow {
+  from {
+  	top: 100px; left: -750px;
+  }
+
+  to {
+  	top: 100px; left: 250px;
+}
+}
+.fleche{
+	width: 60px;
+	height: 40px;
+	animation-name: fleche;
+	animation-direction: normal;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	position: absolute;
+	top: 360px; left: 610px;
+}
+.ordre{
+	color: white;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 270px;
+}
+.flechevertical{
+	position: absolute; left: 630px; top: 515px;
+	width: 40px; height: 60px;
+}
+.flechevertical:hover{
+	position: absolute; left: 620px; top: 510px;
+	width: 60px; height: 70px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 0px 20px;
+}
+@keyframes fleche{
+	from{
+		position: absolute; top: 360px; left: 600px;
+	}
+	to{
+		position: absolute; top: 360px; left: 650px;
+	}
+}
+.circlerotate1{
+	text-align: center;
+	width: 200px;
+	height: 200px;
+	float: left; margin-left: 120px; margin-top: 55px;
+	background-color: gainsboro;
+	border-radius: 50%;
+	background-color: gray;
+	background-image: url("images/badpic.jpg");
+	background-size: 160%;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 3px solid white;
+}
+.circlerotate1:hover{
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	float: left; margin-left: 95px; margin-top: 20px;
+	transform: rotate(1turn);
+	background-image: url("images/badpic.jpg");
+	background-position: center;
+	background-size: 200%;
+	transition: 0.4s;
+	border: 3px solid white;
+}
+.circlerotate2{
+	text-align: center;
+	float: right; margin-right: 120px; margin-top: 55px;
+	width: 200px;
+	height: 200px;
+	background-color: gainsboro;
+	border-radius: 50%;
+	border: 3px solid white;
+	background-image: url("images/smilegatsby.jpg");
+	background-size: 200%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.circlerotate2:hover{
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	float: right; margin-right: 95px; margin-top: 20px;
+	transform: rotate(1turn);
+	background-image: url("images/smilegatsby.jpg");
+	background-position: center;
+	background-size: 200%;
+	transition: 0.4s;
+	border: 3px solid white;
+}
+.titrewindow1{
+	color: white;
+	font-size: 30px;
+	font-family: 'Bebas Neue', cursive;
+	text-align: center;
+}
+.ancienspatients{
+	font-family: 'Bebas Neue', cursive;
+	position: absolute;
+	padding-left: 40px;
+	color: white;
+	font-size: 20px;
+}
+box{
+	animation-duration: 5s;
+ 	animation-name: slideinleftwindow;
+ 	animation-direction: alternate;
+}
+.cartegauche{
+	z-index: 2;
+	display: grid;
+	grid-template-columns: 300px;
+	grid-template-rows: 100px 300px;
+	position: absolute;
+	top: 690px;
+	left: 300px;
+	width: 300px;
+	height: 400px;
+	background: #90EE90;
+	border: 4px outset green;
+}
+.Titre1{
+	font-family: 'Bebas Neue', cursive;
+	grid-area: 1 / 1 / 1 / 1;
+	font-size: 30px;
+	color: white;
+	text-align: center;
+	padding-top: 30px;
+}
+.contentgauche{
+	grid-area : 2 / 1 / 2 / 1;
+	filter: brightness(20%);
+	box-shadow: 0px 30px 20px rgba(0, 0, 0, 0.3);
+}
+#cartedroite{
+	z-index: 2;
+	display: grid;
+	grid-template-columns: 300px;
+	grid-template-rows: 100px 300px;
+	position: absolute;
+	top: 690px;
+	left: 675px;
+	width: 300px;
+	height: 400px;
+	background: black;
+	border: 4px outset rgba(250, 0, 0, 1);
+}
+.Titre2{
+	font-family: 'Bebas Neue', cursive;
+	grid-area: 1 / 1 / 1 / 1;
+	font-size: 30px;
+	color: darkred;
+	text-align: center;
+	padding-top: 30px;
+}
+.contentdroite{
+	grid-area : 2 / 1 / 2 / 1;
+	filter: brightness(20%);
+	box-shadow: 0px 30px 20px rgba(0, 0, 0, 0.3);
+}
+.cartegauche:hover{
+	position: absolute;
+	top: 625px;
+	left: 275px;
+	display: grid;
+	grid-template-columns: 350px;
+	grid-template-rows: 100px 350px;
+	background-color: #90EE90;
+	width: 350px;
+	height: 450px;
+	box-shadow: 10px 10px 10px 10px rgba(255, 255, 255, 0.3);
+	border: 4mm outset rgba(0, 250, 0, 1);
+	background-image: url("images/smile.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+#cartedroite:hover{
+	display: grid;
+	grid-template-columns: 350px;
+	grid-template-rows: 100px 300px;
+	position: absolute;
+	top: 625px;
+	left: 650px;
+	background-color: red;
+	width: 350px;
+	height: 450px;
+	border: 4mm outset rgba(0, 0, 0, 1);
+	box-shadow: 10px 10px 10px 10px rgba(255, 0, 0, 0.6);
+	background-image: url("images/bad.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+#boutonclair{
+	animation-duration: 1s;
+ 	animation-name: slideinboutonclair;
+ 	animation-direction: alternate;
+	font-family: 'Lexend Giga', sans-serif;
+	grid-area: auto;
+	width: 160px; height: 50px;
+	background-color: white;
+	border-radius: 9px;
+	color: black;
+ 	text-align: center;
+ 	text-decoration: none;
+ 	display: inline-block;
+ 	position: fixed; top: 500px; left: 50px; 
+}
+@keyframes slideinboutonclair {
+  from {
+  	top: 500px; left: -500px;
+   	background-color: black;
+  }
+
+  to {
+  	top: 500px; left: 50px;;
+}
+}
+#boutonfoncé{
+	animation-duration: 1s;
+ 	animation-name: slideinboutonfoncé;
+ 	animation-direction: alternate;
+	position: fixed; top: 560px; left: 50px; 
+	font-family: 'Lexend Giga', sans-serif;
+	width: 160px; height: 50px;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 9px;
+	color: white;
+ 	text-align: center;
+ 	text-decoration: none;
+ 	display: inline-block;
+}
+@keyframes slideinboutonfoncé {
+  from {
+  	top: 560px; left: -500px;
+   	background-color: black;
+  }
+
+  to {
+  	top: 560px; left: 50px;;
+}
+}
+aside{
+	width: 250px;
+	height: 150%;
+	position: absolute;
+	top: 100px; right: 10px;
+	background-color: maroon;
+	display: grid;
+	grid-template-columns: 250px;
+	grid-template-rows: 60px 50px 50px 50px 50px auto;
+	grid-row-gap: 10px;
+	border: 5px outset red;
+	
+}
+.titremenu{
+	padding-top: 20px;
+	grid-area: 1 / 1 / 1 / 1;
+	background-color: darkslategray;
+	color: white;
+	text-align: center;
+	font-family: 'Lexend Giga', sans-serif;
+}
+aside ul{
+	text-align: left;
+	grid-area: auto;
+	list-style-type: none;
+	font-family: 'Lexend Giga', sans-serif;
+	text-decoration: none;
+	color: white;
+	padding-right: 10px;
+}
+aside ul:hover{
+	background-color: rgba(255, 255, 255, 0.4);
+}
+.insta{
+	grid-area: 5 / 1 / 5 / 1;
+}

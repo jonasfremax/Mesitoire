@@ -1,0 +1,44 @@
+.bodynormal{
+	background-image: url("images/hapiness.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+.titrenormal{
+	text-align: center;
+	font-family: 'Lexend Giga', sans-serif;
+	border-bottom: 6px outset red;
+	background: linear-gradient(to right, white, lightblue);
+}
+.titrenormal a{
+	text-decoration: none;
+	color: darkred;
+}
+.petittitrenormal{
+	padding-top: 100px;
+	font-family: 'Anton', sans-serif;
+	text-align: center;
+}
+.furious{
+	font-family: 'Anton', sans-serif;
+	text-align: center;
+}
+.ordre{
+	font-family: 'Anton', sans-serif;
+	text-align: center;
+	font-size: 30px;
+}
+.pingouin {
+	width: 160px;
+	height: 160px;
+	position: absolute; top: 400px; left: 600px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.pingouin:hover{
+	transform: rotate(360deg);
+}
+.lienpoursecasser{
+	text-decoration: red underline;
+}
